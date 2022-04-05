@@ -1,0 +1,303 @@
+body {
+    background: #F4F4F4;
+}
+
+header {
+    background: #05052D;
+	padding: 15px 0;
+    font-family: 'Bitter', serif;
+}
+
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 20px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 20px;
+}
+
+nav a {
+	color: #F4F4F4;
+	font-size: 25px;
+	text-decoration: none;
+    transition: 0.6s;
+}
+
+nav a:hover {
+    color: #1FCC4F;
+}
+
+/* ======= HOME ======= */
+.instrucao {
+    position: relative;
+    color: #05052D;
+    font-family: 'Noto Serif', serif;
+    font-size: 29px;
+    font-weight: bold;
+    text-align: center;
+    margin: 60px 0 0;
+
+}
+
+:root {
+    --color1: #1FCC4F;
+    --color2: #1FCCBC;
+    --color3: #1F74CC;
+    --color4: #B41FCC;
+}
+
+.tela {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 50px; 
+    animation: gradient 10s ease infinite;
+    background: linear-gradient(55deg, var(--color1), var(--color2), var(--color3), var(--color4)) no-repeat;
+    background-size: 600% 300%;
+    margin-bottom: 16px; 
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    position: relative;
+    top: -275px;
+    left: 280px;
+    display: inline;
+}
+
+.cores {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.cores::-webkit-color-swatch {
+    border-radius: 50%;
+    border: 5px solid #F4F4F4;
+    transition: 0.4s;
+}
+
+.cores:hover.cores::-webkit-color-swatch {
+    border-radius: 50%;
+    border: 2px solid #F4F4F4;
+}
+
+/* ======= SOBRE ======= */
+.sobre .titulo {
+    position: relative;
+    color: #05052D;
+    font-family: 'Noto Serif', serif;
+    font-size: 29px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+}
+
+.sobre .caixa-sobre {
+    margin-bottom: 40px;
+}
+
+.sobre .texto {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding: 15px 5px;
+    background: #E6E6E6;
+    color: #292929;
+    text-align: justify;
+    font-family:'Nunito', sans-serif;
+    font-size: 17px;
+}
+
+.sobre .caixa-sobre a {
+    color: #292929;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.sobre .caixa-sobre a:hover {
+    color: #1F74CC;
+}
+
+/* ======= AUTOR ======= */
+.curriculo {
+    position: relative;
+	width: 940px;
+	margin: 1em auto;
+}
+
+.curriculo .apresentacao {
+    color: #05052D;
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+}
+
+.curriculo .foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.curriculo .nome {
+    font-size: 29px;
+    font-weight: bold;
+    margin: 1em 0 0.2em;
+}
+
+.curriculo .cargo {
+    font-size: 19px;
+}
+
+.curriculo .corpo-curriculo {
+    padding: 15px 0;
+    color: #292929;
+    text-align: justify;
+    font-family:'Nunito', sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.curriculo .corpo-curriculo h3 {
+    color: #05052D;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.curriculo .corpo-curriculo h4 {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+.curriculo .caixa-sobre, .caixa-formacoes, .caixa-cursos, .caixa-objetivo, .caixa-contato {
+    background: #E6E6E6;
+    padding: 5px 15px;
+    margin: 1em;
+}
+
+.curriculo .caixa-cursos p {
+    margin: 0.5em 0;
+    font-weight: bold;
+}
+
+.curriculo .caixa-cursos ul {
+    list-style-type: circle;
+}
+
+.curriculo .caixa-cursos .itens {
+    margin-left: 1em;
+}
+
+.curriculo .caixa-contato a {
+    text-decoration: none;
+    color: #292929;
+}
+
+.curriculo .caixa-contato a:hover {
+    font-weight: bold;
+}
+
+/* ======= FOOTER ======= */
+footer {
+    background: #2B2B2B;
+    padding: 20px 0;
+}
+
+.caixa-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-footer {
+    margin-bottom: 10px;
+}
+
+.copyright a {
+	color: #8f8f8f;
+	font-size: 10px;
+    text-decoration: none;
+    padding-top: 10px;
+    font-family: 'Bitter', serif;
+}
+
+
+/*===================== MOBILE =========================*/
+
+@media screen and (max-width: 480px) {
+    .caixa {
+        width: 100%;
+    }
+
+    .caixa .logo {
+        width: 100px;
+    }
+
+    nav {
+        top: 10px;
+    }
+
+    nav a {
+        padding: 0 8px;
+    }
+}
+/* ======= HOME ======= */
+@media screen and (max-width: 480px) {
+    .container {
+        top: -450px;
+        left: 0;
+    }
+
+    .tela {
+        height: 500px;
+    }
+}
+
+
+/* ======= SOBRE | AUTOR ======= */
+@media screen and (max-width: 480px) {
+    .sobre .texto, .curriculo {
+        width: 95%;
+        padding: 15px 10px;
+    }
+}
+
+/* ======= FOOTER ======= */
+
+@media screen and (max-width: 480px) {
+    .logo-footer {
+        width: 100px;
+    }
+}

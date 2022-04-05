@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Aurora - Home</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><a href="index.html"><img class="logo" src = "logo.png"></a></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+						<li><a href="autor.html">Autor</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="instrucao">
+                <p>Clique nos circulos para mudar as cores do efeito</p>
+            </div>
+            <!-- Tela aurora -->
+            <div class="tela">
+            </div>
+
+            <!-- Paleta de cores -->
+            <div class="container">
+                <input type="color" class="cores" value="#1FCC4F" id="color1">
+            </div>
+            <div class="container">
+                <input type="color" class="cores" value="#1FCCBC" id="color2">
+            </div>
+            <div class="container">
+                <input type="color" class="cores" value="#1F74CC" id="color3">
+            </div>
+            <div class="container">
+                <input type="color"class="cores" value="#B41FCC" id="color4">
+            </div>
+
+            <script>
+                let color1 = document.getElementById ('color1');
+                let color2 = document.getElementById ('color2');
+                let color3 = document.getElementById ('color3');
+                let color4 = document.getElementById ('color4');
+
+                 function mudaCor (cor) {
+                    cor.addEventListener('change', (e) => {
+                    document.documentElement.style.setProperty(`--${cor.id}`, e.target.value);
+                    });
+                };
+
+                mudaCor(color1);
+                mudaCor(color2);
+                mudaCor(color3);
+                mudaCor(color4);
+            </script>
+        </main>
+
+        <footer>
+            <div class="caixa-footer">
+                <a href="index.html"><img class="logo-footer" src = "logo-footer.png"></a>
+                <p class="copyright"><a href="autor.html">Created by: Gabriel Sousa Costa</a></p>
+            </div>
+        </footer>
+    </body>
+</html>

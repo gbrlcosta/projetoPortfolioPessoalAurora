@@ -1,2 +1,1 @@
-# projetoPortfolioPessoalAurora
-Arquivos HTML, estilizados com CSS e com funcionalidades em JavaScript. No arquivo há um efeito simples que movimenta um gradiente de cores, o usuário pode mudar as cores desse efeito com mouse. Esse é o meu primeiro projeto pessoal e tem o intuito de por meus conhecimentos em prática. Sinta-se a vontade para entrar em contato comigo e me dizer como melhorar.
+![print1](https://user-images.githubusercontent.com/103055661/161862525-30ba0f9a-5438-4dc1-b5a1-1539104f6ac2.png)
